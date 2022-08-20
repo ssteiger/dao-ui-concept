@@ -1,0 +1,54 @@
+{
+  "name": "@dao-ui-concept/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "react-app:build": "yarn workspace @dao-ui-concept/react-app build --max-old-space-size=12288",
+    "react-app:eject": "yarn workspace @dao-ui-concept/react-app eject",
+    "react-app:start": "yarn workspace @dao-ui-concept/react-app start",
+    "react-app:test": "yarn workspace @dao-ui-concept/react-app test",
+    "build": "yarn workspace @dao-ui-concept/react-app build --max-old-space-size=12288",
+    "prettier": "yarn workspace @dao-ui-concept/react-app prettier",
+    "chain": "yarn workspace @dao-ui-concept/hardhat chain",
+    "fork": "yarn workspace @dao-ui-concept/hardhat fork",
+    "node": "yarn workspace @dao-ui-concept/hardhat chain",
+    "test": "yarn workspace @dao-ui-concept/hardhat test",
+    "start": "yarn workspace @dao-ui-concept/react-app start",
+    "compile": "yarn workspace @dao-ui-concept/hardhat compile",
+    "deploy": "yarn workspace @dao-ui-concept/hardhat deploy",
+    "verify": "yarn workspace @dao-ui-concept/hardhat verify",
+    "watch": "yarn workspace @dao-ui-concept/hardhat watch",
+    "accounts": "yarn workspace @dao-ui-concept/hardhat accounts",
+    "balance": "yarn workspace @dao-ui-concept/hardhat balance",
+    "send": "yarn workspace @dao-ui-concept/hardhat send",
+    "ipfs": "yarn workspace @dao-ui-concept/react-app ipfs",
+    "surge": "yarn workspace @dao-ui-concept/react-app surge",
+    "s3": "yarn workspace @dao-ui-concept/react-app s3",
+    "ship": "yarn workspace @dao-ui-concept/react-app ship",
+    "generate": "yarn workspace @dao-ui-concept/hardhat generate",
+    "account": "yarn workspace @dao-ui-concept/hardhat account",
+    "mineContractAddress": "cd packages/hardhat && npx hardhat mineContractAddress",
+    "wallet": "cd packages/hardhat && npx hardhat wallet",
+    "fundedwallet": "cd packages/hardhat && npx hardhat fundedwallet",
+    "flatten": "cd packages/hardhat && npx hardhat flatten",
+    "clean": "cd packages/hardhat && npx hardhat clean",
+    "theme": "yarn workspace @dao-ui-concept/react-app theme",
+    "watch-theme": "yarn workspace @dao-ui-concept/react-app watch",
+    "postinstall": "husky install"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**",
+      "**/hardhat-ts",
+      "**/hardhat-ts/**"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^7.0.2"
+  }
+}
