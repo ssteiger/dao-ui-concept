@@ -8,15 +8,22 @@ export default function Vote({ localProvider, tx, readContracts, writeContracts,
       </div>
       <div style={{ marginTop: '20%', padding: '0 20%' }}>
         <h2 style={{ color: '#fff', fontSize: 15 }}>Proposal:</h2>
-        <p style={{ color: '#fff', fontSize: 35 }}>Move all DAO Treasury funds to staking protocol</p>
+        <p style={{ color: '#fff', fontSize: 35, lineHeight: '45px' }}>
+          Move all DAO Treasury funds to staking protocol
+        </p>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+      <div
+        style={{
+          display: 'flex',
+        }}
+      >
         <button
           style={{
-            width: 120,
+            flex: '1 1 auto',
             height: 82,
-            marginBottom: 25,
+            margin: 25,
+            marginBottom: 50,
             background: '#00FF75',
             color: '#FFF',
             borderRadius: 40,
@@ -27,9 +34,10 @@ export default function Vote({ localProvider, tx, readContracts, writeContracts,
         </button>
         <button
           style={{
-            width: 120,
+            flex: '1 1 auto',
             height: 82,
-            marginBottom: 25,
+            margin: 25,
+            marginBottom: 50,
             background: '#F04848',
             color: '#FFF',
             borderRadius: 40,
